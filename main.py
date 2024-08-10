@@ -1,1 +1,5 @@
-from src.mlproject.config import configuration
+from mlproject import logger
+
+
+
+logger.info("Logging from main.py")

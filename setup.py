@@ -15,7 +15,8 @@ LIST_OF_REQUIREMENTS = []
 
 
 setuptools.setup(
-    name=SRC_REPO,
+    name=REPO_NAME,
+    source_repo=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
