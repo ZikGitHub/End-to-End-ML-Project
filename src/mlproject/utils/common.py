@@ -15,7 +15,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """
     Reads yaml file and returns
     Args: 
-        path_to_yaml: str
+        path_to_yaml (str): path like input
     Returns: 
         ConfigBox: ConfigBox type
     """
@@ -25,6 +25,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
             content = yaml.safe_load(yaml_file)
             logger.info("yaml loaded successfully")
             return ConfigBox(content)
+        
     except BoxValueError:
         raise ValueError("yaml is not in correct format")
     except Exception as e:
